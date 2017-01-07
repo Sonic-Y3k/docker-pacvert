@@ -18,7 +18,7 @@ RUN /bin/chmod +x /etc/my_init.d/pacvert.sh
 RUN /bin/sh /tmp/setup.sh
 
 RUN mkdir -p /config
-RUN git clone -b dev https://github.com/Sonic-Y3k/pacvert.git /config/pacvert/
+RUN git clone https://github.com/Sonic-Y3k/pacvert.git /config/pacvert/
 
 #########################################
 ##         EXPORTS AND VOLUMES         ##
