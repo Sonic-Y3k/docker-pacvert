@@ -4,8 +4,8 @@ if [ ! -d /config/pacvert ]; then
   mkdir -p /config
   cd /config
   git clone https://github.com/Sonic-Y3k/pacvert.git
-  #git checkout dev
-  #git pull
+  chown -R nobody:users /config
+  chmod -R g+rw /config
 fi
 
 cd /config/pacvert
